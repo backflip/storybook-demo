@@ -15,14 +15,7 @@ module.exports = async ({ config, mode }) => {
 
   config.module.rules.push({
     test: /\.htl$/,
-    use: [
-      {
-        loader: "htl-loader",
-        options: {
-          globalname: "htl"
-        }
-      }
-    ],
+    use: ["htl-loader"],
     include: path.resolve(__dirname, "../")
   });
 
