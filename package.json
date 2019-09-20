@@ -1,0 +1,34 @@
+{
+  "name": "storybook",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "vue": "^2.6.10"
+  },
+  "devDependencies": {
+    "@adobe/htlengine": "^3.2.2",
+    "@babel/core": "^7.6.0",
+    "@storybook/html": "^5.2.1",
+    "@storybook/vue": "^5.2.1",
+    "babel-loader": "^8.0.6",
+    "babel-preset-vue": "^2.0.2",
+    "css-loader": "^3.2.0",
+    "handlebars": "^4.2.0",
+    "handlebars-loader": "^1.7.1",
+    "htl-loader": "^1.0.1",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.0.0",
+    "vue-loader": "^15.7.1",
+    "vue-template-compiler": "^2.6.10"
+  }
+}
