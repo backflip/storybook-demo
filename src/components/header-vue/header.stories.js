@@ -1,4 +1,3 @@
-import Vue from "vue";
 import Header from "./header.vue";
 
 export default {

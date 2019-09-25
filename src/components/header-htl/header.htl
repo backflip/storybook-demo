@@ -1,1 +1,11 @@
-<header class="header header--htl">${htl.title}</header>
+<header data-sly-use.header="core.models.Header" class="header header--htl">
+    ${header.title}
+    <sly data-sly-test="${header.dropdown}">
+        <dropdown inline-template="${true}">
+            <div>
+                <button type="button" @click="toggle">Toggle</button>
+                <div v-show="expanded">Content</div>
+            </div>
+        </dropdown>
+    </sly>
+</header>

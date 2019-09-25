@@ -1,33 +1,21 @@
-import createHeader from "./header.htl";
+import defaultTemplate from "./header.htl";
+import customTemplate from "./header.htl?model=dropdown";
+import Dropdown from "../dropdown/dropdown";
 
 export default {
   title: "Header HTL"
 };
 
 export const standard = () => ({
-  data() {
-    return {
-      source: "Loading"
-    };
+  template: defaultTemplate,
+  components: {
+    Dropdown
   },
-  async created() {
-    this.source = await createHeader({
-      title: "Hi there!"
-    });
-  },
-  template: `<div v-html="source" />`
 });
 
 export const custom = () => ({
-  data() {
-    return {
-      source: "Loading"
-    };
+  template: customTemplate,
+  components: {
+    Dropdown
   },
-  async created() {
-    this.source = await createHeader({
-      title: "Hi!"
-    });
-  },
-  template: `<div v-html="source" />`
 });
